@@ -2,7 +2,7 @@
 
 A React Native mobile application built with Expo for tracking fetal movements during pregnancy. This app helps expecting mothers monitor their baby's activity by tracking the time it takes to feel 10 movements.
 
-## 📱 Features
+##  Features
 
 - **Home Screen**: View all previously saved tracking sessions with date/time and duration
 - **Counter Screen**: Track fetal movements with a live timer that stops automatically after 10 kicks
@@ -10,15 +10,12 @@ A React Native mobile application built with Expo for tracking fetal movements d
 - **Local Data Persistence**: All data is stored locally using AsyncStorage
 - **Clean, Minimal UI**: Simple and intuitive interface following the Figma design specifications
 
-## 🎥 Demo
 
-[Screen Recording - Please see attached video file]
-
-## 📦 Download
+##  Download
 
 [APK Download - Generated using `eas build`]
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 ### Prerequisites
 
@@ -77,7 +74,7 @@ eas build --platform android --profile production
 eas build --platform ios
 ```
 
-## 📚 Libraries Used
+##  Libraries Used
 
 ### Core Dependencies
 
@@ -112,7 +109,7 @@ eas build --platform ios
 - **react-native-safe-area-context** (~5.6.0): Handles safe area insets for notched devices
 - **react-native-screens** (~4.16.0): Native navigation primitives for better performance
 
-## 🗂️ Data Structure
+##  Data Structure
 
 ### TrackingSession Interface
 
@@ -161,7 +158,7 @@ StorageService.deleteSession(sessionId: string): Promise<void>
 StorageService.clearAll(): Promise<void>
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 FetalTrackerExpo/
@@ -195,7 +192,7 @@ FetalTrackerExpo/
 └── tsconfig.json                # TypeScript configuration
 ```
 
-## 🎯 Features Breakdown
+##  Features Breakdown
 
 ### Home Screen (`app/(tabs)/index.tsx`)
 
@@ -269,7 +266,7 @@ FetalTrackerExpo/
 9. **Offline First**: App works completely offline with no internet dependency
 10. **Data Retention**: Data persists indefinitely unless manually cleared or app uninstalled
 
-## 🎨 Design Considerations
+##  Design Considerations
 
 ### Figma Compliance
 - Followed the provided Figma design layout and interactions
@@ -291,7 +288,7 @@ FetalTrackerExpo/
 - High contrast text on backgrounds
 - Descriptive button labels
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -326,7 +323,7 @@ FetalTrackerExpo/
    npx tsc --noEmit
    ```
 
-## 📝 Development Notes
+##  Development Notes
 
 ### Code Quality & Best Practices
 
@@ -357,7 +354,7 @@ Manual testing performed on:
 - Empty state handling
 - Pull-to-refresh functionality
 
-## 🚧 Future Enhancements (Out of Scope)
+## Future Enhancements (Out of Scope)
 
 - Cloud backup and multi-device sync
 - Export data to CSV/PDF
@@ -367,7 +364,7 @@ Manual testing performed on:
 - Multi-language support
 - Sharing sessions with healthcare providers
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built as part of a React Native Developer Intern assignment. This app demonstrates:
 - Strong React Native fundamentals
@@ -378,7 +375,7 @@ Built as part of a React Native Developer Intern assignment. This app demonstrat
 - Attention to design details and user experience
 - Ability to translate Figma designs into working code
 
-## 📄 License
+## License
 
 This project is created for educational and assignment purposes.
 
@@ -386,12 +383,12 @@ This project is created for educational and assignment purposes.
 
 **Important Notes for Submission:**
 
-1. ✅ **GitHub Repository**: Clean commit history with meaningful messages
-2. ✅ **README**: Comprehensive documentation (this file)
-3. 📹 **Screen Recording**: Please see attached video demonstration
-4. 📦 **APK**: Generated using EAS Build (Android)
+1.  **GitHub Repository**: Clean commit history with meaningful messages
+2.  **README**: Comprehensive documentation (this file)
+3.  **Screen Recording**: Please see attached video demonstration
+4.  **APK**: Generated using EAS Build (Android)
 
-**Built with ❤️ using React Native, Expo, and TypeScript**
+**Built with  using React Native, Expo, and TypeScript**
 
 - **@react-navigation/native** (^7.1.8): Navigation library
 - **react-native-gesture-handler** (~2.28.0): Gesture handling
@@ -399,7 +396,7 @@ This project is created for educational and assignment purposes.
 - **react-native-safe-area-context** (~5.6.0): Safe area handling
 - **react-native-screens** (~4.16.0): Native screen optimization
 
-## 🗂️ Data Structure
+##  Data Structure
 
 ### TrackingSession Interface
 
@@ -429,7 +426,7 @@ StorageService.deleteSession(id)       // Delete a specific session
 StorageService.clearAll()              // Clear all data (for testing)
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 FetalTrackerExpo/
@@ -455,7 +452,7 @@ FetalTrackerExpo/
 └── assets/                      # Images and static files
 ```
 
-## 🎯 Features Breakdown
+##  Features Breakdown
 
 ### Home Screen (`app/(tabs)/index.tsx`)
 
@@ -488,7 +485,7 @@ FetalTrackerExpo/
 - Close button and backdrop dismiss
 - Smooth animations
 
-## 🔧 Assumptions Made
+##  Assumptions Made
 
 1. **Minimum Duration**: Sessions are saved with a minimum of 1 minute duration
 2. **Kick Count**: While the app allows saving any kick count, the goal is 10 kicks
@@ -498,7 +495,7 @@ FetalTrackerExpo/
 6. **Platform**: Optimized for both iOS and Android
 7. **Offline**: App works completely offline (no backend required)
 
-## 🎨 Design Considerations
+##  Design Considerations
 
 - Follows the provided Figma design guidelines
 - Purple theme (#7B61FF) for primary actions
@@ -507,7 +504,7 @@ FetalTrackerExpo/
 - Accessible font sizes and touch targets
 - Consistent spacing and padding
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -529,7 +526,7 @@ FetalTrackerExpo/
 4. **Navigation issues**
    - Ensure all routes are properly configured in `_layout.tsx`
 
-## 📝 Development Notes
+##  Development Notes
 
 - This project was built without heavy reliance on AI code generation
 - Code is structured for maintainability and readability
@@ -537,7 +534,7 @@ FetalTrackerExpo/
 - Proper error handling implemented throughout
 - User confirmations for destructive actions
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Built as part of a React Native Developer Intern assignment. The app demonstrates:
 - React Native fundamentals
@@ -546,11 +543,3 @@ Built as part of a React Native Developer Intern assignment. The app demonstrate
 - Navigation patterns
 - User experience design
 - TypeScript integration
-
-## 📄 License
-
-This project is created for educational and assignment purposes.
-
----
-
-**Note**: Remember to add your screen recording and APK download links before final submission.
