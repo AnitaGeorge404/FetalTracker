@@ -13,7 +13,7 @@ A React Native mobile application built with Expo for tracking fetal movements d
 
 ##  Download
 
-[APK Download - Generated using `eas build`]
+https://expo.dev/accounts/anitageorge/projects/fetal-tracker/builds/f1d122c0-4077-41b4-9c96-60bc0ee97568
 
 ##  How to Run the Project
 
@@ -29,7 +29,7 @@ A React Native mobile application built with Expo for tracking fetal movements d
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AnitaGeorge404/FetalTracker
    cd FetalTrackerExpo
    ```
 
@@ -120,17 +120,6 @@ interface TrackingSession {
   timeInMinutes: number;   // Duration in minutes it took to reach 10 kicks
   kickCount: number;       // Number of kicks recorded (typically 10)
   createdAt: number;       // Unix timestamp for accurate sorting
-}
-```
-
-**Example:**
-```json
-{
-  "id": "1704312000000",
-  "date": "2026-01-03T10:30:00.000Z",
-  "timeInMinutes": 12,
-  "kickCount": 10,
-  "createdAt": 1704312000000
 }
 ```
 
