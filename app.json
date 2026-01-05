@@ -1,25 +1,31 @@
 {
   "expo": {
-    "name": "FetalTrackerExpo",
-    "slug": "FetalTrackerExpo",
+    "name": "Fetal Movement Tracker",
+    "slug": "fetal-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "fetaltrackerexpo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "description": "Track your baby's movements during pregnancy with this simple and intuitive fetal movement tracker.",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fetaltracker.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#7B61FF",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
+      "package": "com.fetaltracker.app",
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "VIBRATE"
+      ]
     },
     "web": {
       "output": "static",
@@ -43,6 +49,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a237a343-cf00-4e8a-86e4-d468b80172dc"
+      }
     }
   }
 }
